@@ -536,19 +536,6 @@
   object-fit: cover;
 }
 
-.speakingCaption {
-  position: absolute;
-  bottom: 14px;
-  left: 16px;
-  z-index: 1;
-  font: 500 10px/1 var(--font-jetbrains-mono), monospace;
-  letter-spacing: 0.08em;
-  color: #fff;
-  background: rgba(22, 23, 28, 0.55);
-  padding: 6px 9px;
-  border-radius: 2px;
-}
-
 .connect {
   padding: 64px 56px;
   background: #16171c;

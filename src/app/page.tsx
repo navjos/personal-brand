@@ -407,15 +407,12 @@ export default function Home() {
             <div className={styles.speakingImgWrap}>
               <Image
                 className={styles.speakingImg}
-                src="/assets/speaker.jpg"
-                alt="Josselyn Navas speaking at the Women Scholars Symposium"
+                src="/assets/milken-conference.jpg"
+                alt="Josselyn Navas speaking at the Milken Conference"
                 fill
                 sizes="(max-width: 1024px) 480px, 470px"
                 quality={90}
               />
-              <span className={styles.speakingCaption}>
-                WOMEN SCHOLARS SYMPOSIUM · 2026
-              </span>
             </div>
           </div>
         </div>
