@@ -235,7 +235,7 @@ export default function Home() {
           <div className={styles.storyImgWrap}>
             <Image
               className={styles.storyImg}
-              src="/assets/portrait.jpg"
+              src="/assets/brand.jpg"
               alt="Josselyn Navas"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 280px, 380px"
@@ -471,8 +471,7 @@ export default function Home() {
                 className={styles.modalImg}
                 src={app.img}
                 alt={app.name}
-                width={app.imgWidth}
-                height={app.imgHeight}
+                fill
                 quality={90}
               />
             </div>
