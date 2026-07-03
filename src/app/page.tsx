@@ -235,10 +235,11 @@ export default function Home() {
           <div className={styles.storyImgWrap}>
             <Image
               className={styles.storyImg}
-              src="/assets/portrait-v5.jpg"
+              src="/assets/portrait.jpg"
               alt="Josselyn Navas"
               fill
-              sizes="380px"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 280px, 380px"
+              quality={90}
               priority
             />
           </div>
@@ -409,7 +410,8 @@ export default function Home() {
                 src="/assets/speaker.jpg"
                 alt="Josselyn Navas speaking at the Women Scholars Symposium"
                 fill
-                sizes="470px"
+                sizes="(max-width: 1024px) 480px, 470px"
+                quality={90}
               />
               <span className={styles.speakingCaption}>
                 WOMEN SCHOLARS SYMPOSIUM · 2026
@@ -474,6 +476,7 @@ export default function Home() {
                 alt={app.name}
                 width={app.imgWidth}
                 height={app.imgHeight}
+                quality={90}
               />
             </div>
             <div className={styles.modalPad}>
