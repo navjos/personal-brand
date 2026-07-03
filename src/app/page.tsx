@@ -380,7 +380,7 @@ export default function Home() {
               <span className={styles.tinkeringAccent}>SPEAKING</span>
             </div>
             <div className={styles.speakingSub}>
-              workshops · podcasts · fireside chats
+              workshops · podcasts · interviews
             </div>
           </div>
           <div className={styles.speakingGrid}>
