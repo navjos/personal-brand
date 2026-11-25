@@ -17,12 +17,12 @@ const SIDES: {
   {
     key: "operator",
     label: "Operator",
-    pre: "I help early-stage startups turn scrappy momentum into systems that scale. I focus on product, customer success, and GTM strategies.",
+    pre: "I help early-stage startups turn scrappy momentum into systems that scale. I focus on business ops and GTM strategies.",
   },
   {
     key: "writer",
     label: "Writer",
-    pre: "I write medium-form essays about ambition, doubt, careers, and money.",
+    pre: "I write medium-form essays about money, careers, and tech. Mostly, what it's like to be the first.",
   },
   {
     key: "dancer",
@@ -52,7 +52,7 @@ const ROLES = [
   },
   {
     role: "Product",
-    note: "0-to-1 at a Techstars-backed startup, then product at enterprise scale.",
+    note: "Product at a tiny startup, then a big company.",
     stops: [
       { co: "RentCheck", years: "2024–2025" },
       { co: "American Express", years: "2025–2026" },
@@ -60,8 +60,8 @@ const ROLES = [
   },
   {
     role: "Scaling startups",
-    note: "Helping founders build the systems and teams that outlast the sprint.",
-    stops: [{ co: "Dutchess Management", years: "Today" }],
+    note: "Working with founders on business ops and GTM.",
+    stops: [{ co: "OH.io Capital", years: "Today" }],
   },
 ];
 
@@ -200,7 +200,7 @@ export default function Home() {
         {/* SIDES TOGGLE */}
         <div className={styles.sides}>
           <div className={styles.sidesLabel}>
-            <span className={styles.sidesLabelDot}>✦</span>&nbsp;&nbsp;I AM A / AN —
+            I AM A / AN —
           </div>
           <div className={styles.sidesRow}>
             {SIDES.map((s) => (
@@ -247,20 +247,21 @@ export default function Home() {
             <div className={styles.sectionLabel}>01 — MY STORY</div>
             <div className={styles.storyText}>
               <p>
-                I&apos;m a New York-based builder and creative working at the
-                intersection of finance and technology. I started on Wall
-                Street at 22, trading Latin American equities for the
-                world&apos;s largest money managers.
+                I&apos;m a builder and creative from Queens, NY, working at the
+                intersection of finance and technology.
               </p>
               <p>
-                Since then, I&apos;ve shipped products and led customer
+                I started on Wall Street at 22, trading Latin American equities for the
+                world&apos;s largest money managers. Since then, I&apos;ve shipped products and led customer
                 success across scrappy startups and larger enterprises.
               </p>
               <p>
-                Today, I help founders scale. I build the systems that hold a
-                company together, make the hires that change its trajectory,
-                and work through the hard problems of building a business
-                guided by the vision of a better tomorrow. I graduated from
+                Today, I work with early-stage founders on business ops and
+                GTM. I start by sitting with the team and learning what&apos;s
+                working and what isn&apos;t. Then I go back to first principles
+                to fix what needs fixing, whether that&apos;s people, process,
+                or tech.
+                I graduated from
                 the University of Chicago, magna cum laude, with a degree in
                 Economics.
               </p>
@@ -306,12 +307,8 @@ export default function Home() {
         {/* 03a TINKERING */}
         <div id="tinkering" className={styles.tinkering}>
           <div className={styles.tinkeringHead}>
-            <div className={styles.tinkeringLabel}>
-              PORTFOLIO&nbsp;&nbsp;/&nbsp;&nbsp;
-              <span className={styles.tinkeringAccent}>TINKERING</span>
-            </div>
             <div className={styles.tinkeringSub}>
-              little things I&apos;ve built for fun · tap any to open
+              little things i&apos;ve built for fun :)
             </div>
           </div>
           <div className={styles.appsGrid}>
@@ -324,7 +321,6 @@ export default function Home() {
               >
                 <div className={styles.appEmoji}>{a.emoji}</div>
                 <div className={styles.appTopRow}>
-                  <span className={styles.appTag}>{a.tag}</span>
                   <span className={styles.appIdx}>{a.idx}</span>
                 </div>
                 <div className={styles.appBody}>
@@ -340,18 +336,9 @@ export default function Home() {
         {/* 04 WRITING */}
         <div id="writing" className={styles.writing}>
           <div className={styles.writingHead}>
-            <div className={styles.writingLabel}>
-              PORTFOLIO&nbsp;&nbsp;/&nbsp;&nbsp;
-              <span className={styles.tinkeringAccent}>WRITING</span>
+            <div className={styles.tinkeringSub}>
+              i write to organize my thoughts.
             </div>
-            <a
-              className={styles.allEssays}
-              href="https://wealthonthe7.substack.com"
-              target="_blank"
-              rel="noopener"
-            >
-              ALL ESSAYS →
-            </a>
           </div>
           <div className={styles.essayList}>
             {ESSAYS.map((e) => (
@@ -374,15 +361,6 @@ export default function Home() {
 
         {/* 05 SPEAKING */}
         <div id="speaker" className={styles.speaking}>
-          <div className={styles.speakingHead}>
-            <div className={styles.speakingLabel}>
-              PORTFOLIO&nbsp;&nbsp;/&nbsp;&nbsp;
-              <span className={styles.tinkeringAccent}>SPEAKING</span>
-            </div>
-            <div className={styles.speakingSub}>
-              workshops · podcasts · interviews
-            </div>
-          </div>
           <div className={styles.speakingGrid}>
             <div>
               <h2 className={styles.speakingHeading}>
