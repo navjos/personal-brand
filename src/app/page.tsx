@@ -168,7 +168,8 @@ export default function Home() {
       <div className={styles.nav}>
         <div className={styles.navInner}>
           <a className={styles.navLogo} href="#top">
-            JOSSELYN NAVAS ©2026
+            <span className={styles.navLogoFull}>JOSSELYN NAVAS ©2026</span>
+            <span className={styles.navLogoShort}>JN</span>
           </a>
           <div className={styles.navLinks}>
             <a className={styles.navLink} href="#story">
@@ -400,7 +401,6 @@ export default function Home() {
       <div id="connect" className={styles.connect}>
         <div className={styles.connectInner}>
           <div>
-            <div className={styles.connectLabel}>04 — SAY HELLO</div>
             <h2 className={styles.connectTitle}>
               Let&apos;s
               <br />
